@@ -9,7 +9,6 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/renderer-react": "^0.4.1",
     "@mdx-js/react": "^2.0.0",
     "@mdx-js/rollup": "^2.0.0",
     "astro": "^0.22.20"

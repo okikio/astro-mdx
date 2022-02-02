@@ -1,5 +1,22 @@
+import { authors } from "./components";
+
 # Hello
 
 This text is written in Markdown.
 
 MDX allows Rich React components to be used directly in Markdown:
+
+Hey MDX
+
+
+What is going on?
+
+{
+    authors.map(({ name, email }) => (
+        <> 
+            <h2>{name}</h2>
+            <a href="#">{email}</a>
+        </>
+    ))
+}
+{console.log("What's up")}
