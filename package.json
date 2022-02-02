@@ -2,6 +2,9 @@
   "name": "@example/minimal",
   "version": "0.0.1",
   "private": true,
+  "workspaces": [
+    "renderer-mdx"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -9,6 +12,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@astrojs/renderer-mdx": "^0.4.1",
     "@mdx-js/react": "^2.0.0",
     "@mdx-js/rollup": "^2.0.0",
     "astro": "^0.22.20"

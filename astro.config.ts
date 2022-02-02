@@ -9,13 +9,5 @@
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
   // Comment out "renderers: []" to enable Astro's default component support.
-  renderers: ['./renderer-mdx'],
-  // vite: {
-  //   plugins: [],
-  //   resolve: {
-  //     alias: {
-  //       'react/jsx-runtime': 'react/jsx-runtime.js',
-  //     },
-  //   },
-  // },
+  renderers: ['@astrojs/renderer-mdx'],
 });
