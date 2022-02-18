@@ -1,20 +1,20 @@
 {
-  "name": "@example/minimal",
-  "version": "0.0.1",
-  "private": true,
-  "workspaces": [
-    "renderer-mdx"
-  ],
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
-  },
-  "devDependencies": {
-    "@astrojs/renderer-mdx": "^0.4.1",
-    "@mdx-js/react": "^2.0.0",
-    "@mdx-js/rollup": "^2.0.0",
-    "astro": "^0.22.20"
-  }
+    "name": "@example/minimal",
+    "version": "0.0.1",
+    "private": true,
+    "workspaces": [
+        "renderer-mdx"
+    ],
+    "scripts": {
+        "dev": "astro dev  --experimental-static-build",
+        "start": "npm run start",
+        "build": "astro build --experimental-static-build",
+        "preview": "astro preview --experimental-static-build"
+    },
+    "devDependencies": {
+        "@astrojs/renderer-mdx": "workspace:*",
+        "@mdx-js/react": "^2.0.0",
+        "@mdx-js/rollup": "^2.0.0",
+        "astro": "^0.22.20"
+    }
 }

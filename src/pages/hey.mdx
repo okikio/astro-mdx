@@ -3,6 +3,7 @@ import { Counter } from './Counter.jsx'
 
 # Hello
 
+
 This text is written in Markdown.
 
 MDX allows Rich React components to be used directly in Markdown: <Counter />
@@ -11,13 +12,14 @@ Hey MDX
 
 
 What is going on?
-
+<ul>
 {
     authors.map(({ name, email }) => (
-        <> 
+        <li key={name}> 
             <h2>{name}</h2>
             <a href="#">{email}</a>
-        </>
+        </li>
     ))
 }
+</ul>
 {console.log("What's up")}
